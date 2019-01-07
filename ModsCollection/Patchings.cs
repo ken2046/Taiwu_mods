@@ -112,20 +112,20 @@ namespace ModsCollection
             }
 
 
-            if (Main.settings.patch3b) //每月行動力100
+            if (Main.settings.patch3b) //每月行動力45
             {
                 foreach (int age in DateFile.instance.ageDate.Keys)
                 {
-                    DateFile.instance.ageDate[age][1] = "100";
+                    DateFile.instance.ageDate[age][1] = "45";
                 }
             }
             else
             { // 還原
                 int age = 0;
-                while (age <= 4) DateFile.instance.ageDate[age++][1] = "10";
-                while (age <= 14) DateFile.instance.ageDate[age++][1] = "20";
-                while (age <= 39) DateFile.instance.ageDate[age++][1] = "30";
-                while (age <= 89) DateFile.instance.ageDate[age++][1] = "20";
+                while (age <= 4) DateFile.instance.ageDate[age++][1] = "20";
+                while (age <= 14) DateFile.instance.ageDate[age++][1] = "30";
+                while (age <= 39) DateFile.instance.ageDate[age++][1] = "45";
+                while (age <= 89) DateFile.instance.ageDate[age++][1] = "30";
                 while (age <= 100) DateFile.instance.ageDate[age++][1] = "10";
             }
 
